@@ -9,7 +9,9 @@ class UserData extends Model
 {
     use HasFactory;
 
+    protected $table = 'users_data';
+
     protected $fillable = [
-        'gender', 'like', 'date_of_birth', 'geolocation'
+        'user_id', 'gender', 'like', 'date_of_birth', 'geolocation'
     ];
 }
